@@ -1,8 +1,8 @@
 package com.test;
 
-import java.io.IOException;
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.IOException;
 
 public class Test {
     public static void main(String[] args) {
@@ -12,6 +12,8 @@ public class Test {
         DemoService demoService = (DemoService) context.getBean("demoService");
 
         System.out.println(demoService.sayHello("哈哈哈"));
+        IWork work = (IWork) context.getBean("workService");
+        System.out.println(work.work("黄威"));
         try {
             System.in.read();
         } catch (IOException e) {
