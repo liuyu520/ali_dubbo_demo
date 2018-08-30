@@ -8,7 +8,7 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public String sayHello(String name) {
         System.out.println("name :" + name);
-        return name;
+        return "hello," + name;
     }
 
 }
