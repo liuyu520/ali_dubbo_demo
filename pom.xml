@@ -109,6 +109,7 @@
         <module>demo-api</module>
         <module>dubbo-consumer</module>
         <module>dubbo-provider</module>
+        <module>dubbo-provider2</module>
     </modules>
     <build>
         <plugins>
