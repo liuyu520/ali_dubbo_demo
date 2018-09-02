@@ -18,6 +18,9 @@ public class ProviderServer {
 //        serviceConfig.setp
         serviceConfig.setInterface(DemoService.class);
         serviceConfig.setRef(new DemoServiceImpl());
+
+        //自定义过滤器 ,see :META-INF/dubbo/com.alibaba.dubbo.rpc.Filter
+        serviceConfig.setFilter("responsedemoFilter");
         serviceConfig.export();
         System.in.read();
     }
